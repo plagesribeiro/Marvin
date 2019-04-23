@@ -1,3 +1,3 @@
 function aleatorio(){
-    return Math.random() * (0 , 1);
+    return Math.random() * (1-0)+0;
 }
