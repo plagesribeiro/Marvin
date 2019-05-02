@@ -1,10 +1,10 @@
-function passadoOuFuturo(d1){
-    var d2 = new Date(2015 , 10 , 21).setHours(0,0,0,0);
-    var resp = "Passado";
-    
-    if(d1 >= d2){
-        resp = "Futuro";
+function passadoOuFuturo(date){
+    var teste = date.toString();
+    var str = teste.substring(0 , teste.length-3);
+
+    if(1445385600 < parseInt(str)){ 
+        return "Futuro";
+    }else{
+        return"Passado";
     }
-    
-    return resp;
 }
