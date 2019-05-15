@@ -1,5 +1,5 @@
 function somaPares(inicio , fim){
-    var num = Math.floor(inicio);
+    var num = Math.ceil(inicio);
     var soma = 0;
     
     while(num <= fim){
