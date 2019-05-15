@@ -3,7 +3,7 @@ function ateZero(num){
     
     if(num>=0){
         while(num>=0){
-            array[num-1] = num;
+            array[num] = num;
             num--;
         }
     }else{
