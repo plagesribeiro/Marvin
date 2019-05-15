@@ -2,13 +2,17 @@ function primo(num){
     var i=2;
     var resp = "Sim";
     
-    while(i<num){
-        if(num%i === 0){
-            resp = "N�o";
-            i = num;
+    if(num===0 || num===1){
+        resp = "Não";
+    }else{
+        while(i<num){
+            if(num%i === 0){
+                resp = "Não";
+                i = num;
+            }
+            i++;
         }
-        i++;
-    }
+    }    
     
     return resp;
 }
