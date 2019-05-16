@@ -13,5 +13,5 @@ def precoMedio(*lista):
     
     media = soma/len(lista);
     
-    print("O produto mais caro se chama "+maiorPreco['nome'])
+    print("O produto mais caro se chama "+"maiorPreco['nome']")
     return media;
