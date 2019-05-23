@@ -1,18 +1,19 @@
 function xp(num){    
     num = Math.round(num);
-     
-    var resp = "Voce eh NOOB broo";
+    var resp = 1;
+    var somador = 100;
+    var aux = somador;
     
-    if(num>0 && num<100){
-        resp = 1;
-    }else if(num>=100 && num<250){
-        resp = 2;
-    }else if(num>=250 && num<450){
-        resp = 3;
-    }else if(num>=450 && num<700){
-        resp = 4;
-    }else if(num>=700){
-        resp = 5;
+    
+    if(num<=0){
+        resp = "Voce eh NOOB broo";
+    }else{
+        
+        while(aux<num){
+            resp++;
+            somador += 50;
+            aux += somador;
+        }
     }
     
     return resp;
